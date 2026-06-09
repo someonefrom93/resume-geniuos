@@ -1,0 +1,42 @@
+{
+  "name": "resume-scorer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test:parser": "tsx scripts/test-parser.ts",
+    "test:store": "tsx scripts/test-store.ts",
+    "test:preview": "tsx scripts/test-preview.tsx",
+    "test:score": "tsx scripts/test-score.ts",
+    "test:api-score": "tsx scripts/test-api-score.ts",
+    "test:pdf": "tsx scripts/test-pdf.tsx",
+    "test:e2e": "tsx scripts/test-e2e.ts",
+    "test": "npm run typecheck && npm run test:parser && npm run test:store && npm run test:preview && npm run test:score && npm run test:api-score && npm run test:pdf"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@react-pdf/renderer": "^4.5.1",
+    "mammoth": "^1.12.0",
+    "next": "16.2.7",
+    "openai": "^6.42.0",
+    "pdf-parse": "^1.1.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "zod": "^4.4.3",
+    "zustand": "^5.0.14"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "tailwindcss": "^4",
+    "tsx": "^4.22.4",
+    "typescript": "^5"
+  }
+}
